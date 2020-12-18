@@ -6,40 +6,42 @@
     <link rel="stylesheet" href="Style.css">
     <title>Google Homepage</title>
 </head>
-<!--Nav Bar-->
-<ul>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Store</a></li>
-    <div>
-        <li><a href="#">Gmail</a></li>
-        <li><a href="#">Images</a></li>
-        <li><a href=#><img src="Assets/hamburger.png" alt="Hamburguer menu"></a></li>
-        <li><a href="#">Sign In</a></li>
-    </div>
-</ul>
-<!--Search-->
 
 <body>
+    <!--Nav Bar-->
+    <ul id="upnav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+        <div class="nav-right">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href=#><img id="hamburguer" src="Assets/hamburger.png" alt="Hamburguer menu"></a></li>
+            <li><a href="#" id="signin">Sign In</a></li>
+        </div>
+    </ul>
+    <!--Main-->
     <main>
-        <div>
+        <div class="logo">
             <img src="Assets/logo.png" alt="Google Logo">
         </div>
         <form>
-            <input type="text" placeholder="Search">
+            <input type="search" placeholder="Search" id="searchbox">
             <button type="submit">Search</button>
             <button type="submit">Feeling Lucky</button>
         </form>
     </main>
     <!--Footer-->
     <footer>
-        <li><a href=#>Advertising</a></li>
-        <li><a href=#>Business</a></li>
-        <li><a href=#>How Search works</a></li>
-        <div>
-            <li><a href=#>Privacy</a></li>
-            <li><a href=#>Terms</a></li>
-            <li><a href=#>Settings</a></li>
-        </div>
+        <ul id="bottomnav">
+            <li><a href=#>Advertising</a></li>
+            <li><a href=#>Business</a></li>
+            <li><a href=#>How Search works</a></li>
+            <div class="rightside">
+                <li><a href=#>Privacy</a></li>
+                <li><a href=#>Terms</a></li>
+                <li><a href=#>Settings</a></li>
+            </div>
+        </ul>
     </footer>
 </body>
 
